@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools==84.0.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "srmwse"
+version = "0.1.0.dev0"
+description = "Reproducible research on radiation information in spacecraft engineering telemetry"
+readme = "README.md"
+license = "MIT"
+license-files = ["LICENSE"]
+requires-python = ">=3.12"
+dependencies = []
+classifiers = [
+  "Development Status :: 2 - Pre-Alpha",
+  "Programming Language :: Python :: 3.12",
+  "Programming Language :: Python :: 3.13",
+  "Topic :: Scientific/Engineering :: Astronomy",
+]
+
+[project.scripts]
+srmwse = "srmwse.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
